@@ -1,0 +1,48 @@
+version: '3.7'
+
+services:
+    db:
+        image: mongo
+        restart: always
+        ports:
+        - 27017:27017
+
+    mongo-seed:
+        build: ./mongo-seed
+        links:
+            - db
+
+    db-admin:
+        image: mongo-express
+        restart: always
+        ports:
+            - 8081:8081
+        depends_on:
+            - db
+        environment:
+            ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+            ME_CONFIG_MONGODB_ADMINPASSWORD: passwd
+            ME_CONFIG_MONGODB_SERVER: db
+
+    backend-api:
+        image: backend-api
+        build: ./backend           
+        depends_on:
+            - db
+        environment:
+            NODE_ENV: development            
+        ports:
+            - 3333:3333            
+        command: sh -c "npm run dev"
+    
+    web:
+        image: web
+        build: ./web           
+        depends_on:
+            - db
+            - backend-api
+        environment:
+            NODE_ENV: development            
+        ports:
+            - 3000:3000            
+        command: sh -c "npm start"

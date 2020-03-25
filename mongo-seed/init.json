@@ -1,0 +1,48 @@
+[
+    {
+        "_id": {
+            "$oid": "5e24d3a63e9f1a99c2999890"
+        },
+        "techs": ["PHP", "Mysql", "NodeJS", "Javascript"],
+        "githubUsername": "pezzetti",
+        "name": "Rafael Pezzetti",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/6005103?v=4",
+        "location": {
+            "coordinates": [{
+                "$numberDouble": "-51.231772"
+            }, {
+                "$numberDouble": "-30.0323787"
+            }, ""],
+            "_id": {
+                "$oid": "5e24d3a63e9f1a99c2999891"
+            },
+            "type": "Point"
+        },
+        "__v": {
+            "$numberInt": "0"
+        }
+    },
+    {
+            "_id": {
+                "$oid": "5e69184c1b4d406630cf9e05"
+            },
+            "techs": ["Cypress", "Selenium", "Javascript"],
+            "githubUsername": "bsouza97",
+            "name": "Bruno Souza",
+            "avatar_url": "https://avatars1.githubusercontent.com/u/44235857?v=4",
+            "location": {
+                "coordinates": [{
+                    "$numberDouble": "-51.2091281"
+                    }, {
+                    "$numberDouble": "-30.0304872"
+                }],
+                "_id": {
+                    "$oid": "5e69184c1b4d406630cf9e06"
+                },
+                "type": "Point"
+            },
+            "__v": {
+                "$numberInt": "0"
+            }
+        }
+  ]
