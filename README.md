@@ -1,1 +1,35 @@
-# omnistack10
+# Dev Radar
+## :rocket: Technologies
+
+This project uses :
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+
+<p align="center">
+  <img alt="Frontend" src=".github/frontEnd.png" width="100%">
+</p>
+
+## Installation guide with Docker
+To run frontend and backend api just run in root folder
+```bash
+$ docker-compose up -d
+```
+
+To run mobile project you need to use [Expo](https://expo.io/)
+Set your IP address on .env inside /mobile folder 
+```bash
+npm i expo-cli -g 
+cd mobile
+npm i
+npm start
+``` 
+## Running the app
+
+Api -> http://localhost:3333
+
+Frontend -> http://localhost:3000
+
+Mobile -> http://localhost:19000
