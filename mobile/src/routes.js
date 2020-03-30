@@ -6,8 +6,8 @@ import Profile from './pages/Profile'
 
 const Routes = createAppContainer(
     createStackNavigator({
-        Main: { screen: Main, navigationOptions: {title: 'DevRadar'}},
-        Profile: { screen: Profile, navigationOptions: {title: 'Perfil no Github'}},
+        Main: { screen: Main, navigationOptions: {title: 'DevsRadar'}},
+        Profile: { screen: Profile, navigationOptions: {title: 'Github Profile'}},
     }, {
         defaultNavigationOptions: {
             headerStyle: {
