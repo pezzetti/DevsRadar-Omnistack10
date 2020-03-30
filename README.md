@@ -9,7 +9,7 @@ This project uses :
 - [Expo](https://expo.io/)
 
 <p align="center">
-  <img alt="Mobile" src=".github/mobile.png" width="30%">
+  <img alt="Mobile" src=".github/app.png" width="30%">
   <img alt="Frontend" src=".github/frontEnd.png" width="70%">
 </p>
 
