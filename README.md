@@ -9,8 +9,10 @@ This project uses :
 - [Expo](https://expo.io/)
 
 <p align="center">
-  <img alt="Frontend" src=".github/frontEnd.png" width="100%">
+  <img alt="Mobile" src=".github/mobile.png" width="30%">
+  <img alt="Frontend" src=".github/frontEnd.png" width="70%">
 </p>
+
 
 ## Installation guide with Docker
 To run frontend and backend api just run in root folder
@@ -19,7 +21,7 @@ $ docker-compose up -d
 ```
 
 To run mobile project you need to use [Expo](https://expo.io/)
-Set your IP address on .env inside /mobile folder 
+
 ```bash
 npm i expo-cli -g 
 cd mobile
@@ -32,4 +34,4 @@ Api -> http://localhost:3333
 
 Frontend -> http://localhost:3000
 
-Mobile -> http://localhost:19000
+Mobile -> http://localhost:19002
