@@ -1,5 +1,5 @@
 const Dev = require('../models/Dev');
-const str2array = require('./utils/str2array');
+const str2array = require('../utils/str2array');
 
 module.exports = {
     async index(req, res){ // raio 10km + filtro de techs

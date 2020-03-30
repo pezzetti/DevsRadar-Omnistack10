@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const cors = require('cors');
-//mongodb://localhost:27017/omnistack
+const http = require('http');
+const { setupWebsocket } = require('./websocket')
 
 mongoose.connect('mongodb://db:27017/omnistack', {
     useNewUrlParser: true,
@@ -10,13 +11,11 @@ mongoose.connect('mongodb://db:27017/omnistack', {
 });
 
 const app = express();
+const server = http.Server(app);
+setupWebsocket(server);
 
 app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
-
-
-
-//mongodb+srv://pezzettinho:senhaMarotaDoPezzetti@cluster0-n4h9j.mongodb.net/test?retryWrites=true&w=majority
+server.listen(3333);
