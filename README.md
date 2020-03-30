@@ -1,4 +1,7 @@
 # Dev Radar
+
+Find nearby developers for their specific technologies
+
 ## :rocket: Technologies
 
 This project uses :
