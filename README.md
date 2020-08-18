@@ -18,7 +18,7 @@ This project uses :
 
 
 ## Installation guide with Docker
-To run frontend and backend api just run in root folder
+To run frontend and backend API just run in root folder
 ```bash
 $ docker-compose up -d
 ```
@@ -33,7 +33,7 @@ npm start
 ``` 
 ## Running the app
 
-Api -> http://localhost:3333
+API -> http://localhost:3333
 
 Frontend -> http://localhost:3000
 
